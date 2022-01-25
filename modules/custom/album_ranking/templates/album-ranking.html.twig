@@ -1,0 +1,15 @@
+<div style="display: flex;justify-content: space-around">
+
+  {% for itemes in content %}
+
+    <div style="display: flex; flex-direction: column;">
+      <img src="{{ itemes.image }}" alt="">
+      <p>#{{ loop.index }}</p>
+      <div><h2>{{ itemes.node.title.value }}</h2></div>
+      <div>Nombre de vote : {{ itemes.vote }}</div>
+      <a href="{{ path('entity.node.canonical', {'node': itemes.node.id}) }}">Voir l'album</a>
+    </div>
+
+  {% endfor %}
+
+</div>

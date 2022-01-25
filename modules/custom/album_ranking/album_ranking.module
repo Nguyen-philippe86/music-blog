@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function album_ranking_theme($existing, $type, $theme, $path)
+{
+  return [
+    'album_ranking' => [
+      'variables' => [
+        'title' => '',
+        'content' => ''
+      ]
+    ]];
+}

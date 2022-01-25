@@ -1,0 +1,8 @@
+album_ranking.ranking:
+  path: '/ranking' #Chemin de la page music-blog.local/ranking
+  defaults:
+    _controller: '\Drupal\album_ranking\Controller\RankingController::page'
+    _title: 'Album ranking page'
+  requirements:
+    _permission: 'access content'
+
